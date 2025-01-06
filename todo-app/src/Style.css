@@ -1,0 +1,29 @@
+body{
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height : 100vh;
+}
+.toDoContainer{
+    /* height : 300px; */
+    width : 300px;
+    padding : 10px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+    border-radius: 10px;
+
+}
+.todoItems{
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+}
+.addtoButton{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
