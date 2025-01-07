@@ -1,4 +1,4 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { createStore } from "@reduxjs/toolkit";
 
 const reducer = (state = 0, action) => {
   switch (action.type) {
@@ -11,6 +11,6 @@ const reducer = (state = 0, action) => {
   }
 };
 
-const store = configureStore(reducer);
+const store = createStore(reducer);
 
 export default store;

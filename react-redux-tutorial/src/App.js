@@ -18,12 +18,6 @@ function App() {
     boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
     transition: "transform 0.2s",
   };
-
-  const buttonHoverStyle = {
-    ...buttonStyle,
-    transform: "scale(1.05)",
-  };
-
   const containerStyle = {
     display: "flex",
     flexDirection: "column",
@@ -38,8 +32,6 @@ function App() {
     <div className="App" style={containerStyle}>
       <button
         style={buttonStyle}
-        onMouseOver={(e) => (e.currentTarget.style = buttonHoverStyle)}
-        onMouseOut={(e) => (e.currentTarget.style = buttonStyle)}
         onClick={(e) => dispatch({ type: "INCREMENT" })}>
         Increment
       </button>
@@ -48,11 +40,10 @@ function App() {
 
       <button
         style={buttonStyle}
-        onMouseOver={(e) => (e.currentTarget.style = buttonHoverStyle)}
-        onMouseOut={(e) => (e.currentTarget.style = buttonStyle)}
         onClick={(e) => dispatch({ type: "DECREMENT" })}>
         Decrement
       </button>
+      
     </div>
   );
 };
